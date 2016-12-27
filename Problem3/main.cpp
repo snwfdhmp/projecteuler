@@ -17,8 +17,10 @@ int main(int argc, char const *argv[])
 		}
 	}
 	printf("Result : \n");
+	b = 0;
 	for(i=1; i<=20; i++) {
-		printf("%llu mod %d = %d\n", n, i, n%i);
+		b+=n%i;
+		printf("%llu mod %d = %d (b=%d)\n", n, i, n%i, b);
 	}
 	time(&t_end);
 	printf("\nN founded : %llu (b=%d) (in %.0f seconds)\n", n, b, difftime(t_end, t_start));
