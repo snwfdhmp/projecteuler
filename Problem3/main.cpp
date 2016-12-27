@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <time.h>
 
-#define INC 20
+#define INC 60
 
 int main(int argc, char const *argv[])
 {
@@ -25,7 +25,7 @@ int main(int argc, char const *argv[])
 	for(i=1;i<=20;i++){
 		b+=(n%i);
 	}
-	
+
 	printf("N founded : %llu (b=%d) (in %.0f seconds)\n", n, b, difftime(t_end, t_start));
 	return 0;
 }
