@@ -9,7 +9,7 @@ int main(int argc, char const *argv[])
 	unsigned long long int n;
 	int i, b=1;
 	for(n=20; (b!=0); n+=20){
-		b = 0;
+		b = n%20;
 		if(n%10000==0)
 			printf("\r%llu", n);
 		for(i=1;i<=20;i++){
