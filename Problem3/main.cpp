@@ -6,21 +6,21 @@ int main(int argc, char const *argv[])
 	time_t t_start, t_end;
 	time(&t_start);
 
-	unsigned int n;
+	unsigned long long int n;
 	int i, b=1;
 	for(n=20; (b!=0); n+=20){
 		b = 0;
 		if(n%10000==0)
-			printf("\r%d", n);
+			printf("\r%llu", n);
 		for(i=1;i<=20;i++){
 			b+=(n%i);
 		}
 	}
 	printf("Result : \n");
 	for(i=1; i<=20; i++) {
-		printf("%d mod %d = %d\n", n, i, n%i);
+		printf("%llu mod %d = %d\n", n, i, n%i);
 	}
 	time(&t_end);
-	printf("\nN founded : %d (b=%d) (in %.0f seconds)\n", n, b, difftime(t_end, t_start));
+	printf("\nN founded : %llu (b=%d) (in %.0f seconds)\n", n, b, difftime(t_end, t_start));
 	return 0;
 }
