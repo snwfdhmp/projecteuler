@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <time.h>
 
-#define INC 60
+#define INC 180 //grow n by INC
 
 int main(int argc, char const *argv[])
 {
