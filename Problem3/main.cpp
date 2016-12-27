@@ -8,7 +8,7 @@ int main(int argc, char const *argv[])
 
 	unsigned int n;
 	int i, b=1;
-	for(n=0; (b!=0); n+=20){
+	for(n=20; (b!=0); n+=20){
 		b = 0;
 		if(n%10000==0)
 			printf("\r%d", n);
