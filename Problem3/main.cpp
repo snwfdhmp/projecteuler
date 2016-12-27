@@ -22,6 +22,6 @@ int main(int argc, char const *argv[])
 		b+=(n%i);
 	}
 	time(&t_end);
-	printf("\nN founded : %llu (b=%d) (in %.0f seconds)\n", n, b, difftime(t_end, t_start));
+	printf("N founded : %llu (b=%d) (in %.0f seconds)\n", n, b, difftime(t_end, t_start));
 	return 0;
 }
